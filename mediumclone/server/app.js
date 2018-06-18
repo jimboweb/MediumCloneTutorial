@@ -15,9 +15,9 @@ const url = process.env.MONGODB_URI || "mongodb://localhost:27017/medium"
 
 /** configure cloudinary */
 cloudinary.config({
-    cloud_name: 'YOUR_CLOUDINARY_NAME_HERE',
-    api_key: 'YOUR_CLOUDINARY_API_KEY_HERE',
-    api_secret: 'YOUR_CLOUDINARY_API_SECRET_HERE'
+    cloud_name: 'kidslearntocode',
+    api_key: '658969491652921',
+    api_secret: 'SYX5wwiGx3xTPrEpPsgOtAE4FJ0'
 })
 
 /** connect to MongoDB datastore */
