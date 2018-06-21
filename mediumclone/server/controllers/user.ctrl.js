@@ -31,15 +31,15 @@ module.exports={
         }
     },
     getUser: (req,res,next) =>{
-        User.findById(req.params.id) //TODO: this part's not working fix it
-            .populate('author')
-            .populate('comments.author').exec((err, article)=> {
+        User.findById(req.params.id)
+            .populate('name')
+            .exec((err, user)=> {
             if (err)
                 res.send(err)
-            else if (!article)
+            else if (!user)
                 res.send(404)
             else
-                res.send(article)
+                res.send(user)
             next()
         })
     }

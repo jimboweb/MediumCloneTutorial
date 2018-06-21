@@ -8,5 +8,5 @@ module.exports = (router) =>{
         .post(multipartWare,usercontroller.addUser())
     router
         .route('/user')
-        .get()
+        .get(usercontroller.getUser())
 }

@@ -4,7 +4,7 @@ const User = require('./../models/User')
 const fs = require('fs')
 const cloudinary = require('cloudinary')
 module.exports = {
-    addUser: (req, res, next) => {
+    addArticle: (req, res, next) => {
         let { text, title, claps, description } = req.body
         if (req.files.image) {
             cloudinary.uploader.upload(req.files.image.path, (result) => {
